@@ -19,12 +19,13 @@ namespace snake
             VerticalLine rightLine = new VerticalLine(0, 24, 78, '+');
             upLine.Draw();
             downLine.Draw();
-            downLine.Draw();
+            leftLine.Draw();
             rightLine.Draw();
 
             // Отрисовка точек
             Point p = new Point(4, 5, '*');
-            p.Draw();
+            Snake snake = new Snake(p, 4, Direction.RIGHT);
+            snake.Draw();
 
             Console.ReadLine();
         }
